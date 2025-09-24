@@ -26,7 +26,7 @@ Approx. 3 hours with overnight research on project setup and testing tasks.
 
 ## Approach & Trade-offs
 - Simple state management for the demo. No Redux Toolkit involved.
-- Modal focus trap implemented for accessibility.
+- Frontend bootstrapped with Vite instead of NextJS for faster development and simpler configuration.
 - Validation done client-side; server trusts payload. (i.e., Input validation for volume and folio is handled in the frontend. The backend assumes the payload is valid, which simplifies server logic but would need additional validation in a production system.)
 - Did not implement DB persistence.
 
