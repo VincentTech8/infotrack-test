@@ -19,4 +19,9 @@ WHERE c.id IS NULL;
 
 -- Suggested index to speed up Query B
 CREATE INDEX idx_certificates_type_created ON Certificates(type, created_at, order_id);
--- The query filters Certificates by type and created_at and joins by order_id.
+-- Justification:
+-- Query B filters the Certificates table by type = 'Title' and created_at within the last 30 days,
+-- then joins to Orders using order_id. This composite index allows the database to quickly:
+-- 1. Filter by type and created_at without scanning the entire table.
+-- 2. Efficiently join on order_id.
+-- Including these three columns in the index minimizes table scans and improves query performance.

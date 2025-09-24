@@ -17,6 +17,7 @@
 /Users/vincent/Downloads/infotrack-test/server/obj/Debug/net8.0/server.csproj.CoreCompileInputs.cache
 /Users/vincent/Downloads/infotrack-test/server/obj/Debug/net8.0/server.MvcApplicationPartsAssemblyInfo.cs
 /Users/vincent/Downloads/infotrack-test/server/obj/Debug/net8.0/server.MvcApplicationPartsAssemblyInfo.cache
+/Users/vincent/Downloads/infotrack-test/server/obj/Debug/net8.0/server.sourcelink.json
 /Users/vincent/Downloads/infotrack-test/server/obj/Debug/net8.0/staticwebassets.build.json
 /Users/vincent/Downloads/infotrack-test/server/obj/Debug/net8.0/staticwebassets.development.json
 /Users/vincent/Downloads/infotrack-test/server/obj/Debug/net8.0/staticwebassets/msbuild.server.Microsoft.AspNetCore.StaticWebAssets.props
@@ -31,4 +32,3 @@
 /Users/vincent/Downloads/infotrack-test/server/obj/Debug/net8.0/server.pdb
 /Users/vincent/Downloads/infotrack-test/server/obj/Debug/net8.0/server.genruntimeconfig.cache
 /Users/vincent/Downloads/infotrack-test/server/obj/Debug/net8.0/ref/server.dll
-/Users/vincent/Downloads/infotrack-test/server/obj/Debug/net8.0/server.sourcelink.json
