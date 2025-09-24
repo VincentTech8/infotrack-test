@@ -1,35 +1,63 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import { useEffect, useState } from "react";
+import "./App.css";
+import { PropertyCard } from "./components/PropertyCard";
+import type { InternalProperty } from "./components/PropertyCard";
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [property, setProperty] = useState<InternalProperty | null>(null);
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    async function fetchProperty() {
+      const externalProperty = {
+        provider: "VIC-DDP",
+        requestId: "REQ-12345",
+        receivedAt: "2025-09-24T02:28:23.659Z",
+        addressParts: {
+          street: "10 Example St",
+          suburb: "Carlton",
+          state: "VIC",
+          postcode: "3053",
+        },
+        formattedAddress: "10 Example St, Carlton VIC 3053",
+        lotPlan: { lot: "12", plan: "PS123456" },
+        title: { volume: "", folio: "" },
+      };
+
+      try {
+        const res = await fetch("http://localhost:5076/api/property/normalize", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify(externalProperty),
+        });
+
+        if (!res.ok) throw new Error(`Failed to fetch property: ${res.status}`);
+        const data: InternalProperty = await res.json();
+        setProperty(data);
+      } catch (err) {
+        console.error(err);
+      } finally {
+        setLoading(false);
+      }
+    }
+
+    fetchProperty();
+  }, []);
 
   return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
+    <div className="App">
+      <h1>Property Normalization Demo</h1>
+      {loading && <p>Loading...</p>}
+      {!loading && property && (
+        <PropertyCard
+          fullAddress={property.fullAddress}
+          lotPlan={property.lotPlan}
+          volumeFolio={property.volumeFolio}
+        />
+      )}
+      {!loading && !property && <p>Failed to load property.</p>}
+    </div>
+  );
 }
 
-export default App
+export default App;
