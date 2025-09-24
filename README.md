@@ -31,5 +31,6 @@ Approx. 3 hours with overnight research on project setup and testing tasks.
 - Did not implement DB persistence.
 
 ## AI Assistance
-- Copilot suggested initial type definitions
-- Verified all logic manually
+- GitHub Copilot was used to generate TypeScript types and some function signatures, helping to speed up setup.
+- SQL queries were generated with assistance from ChatGPT and manually reviewed for accuracy.
+- Despite AI suggestions, all mapping functions, API calls, and UI behavior were reviewed and tested by hand to ensure correctness and meet the requirements.
