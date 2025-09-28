@@ -57,7 +57,7 @@ describe("PropertyCard", () => {
       target: { value: "999" },
     });
     fireEvent.change(screen.getByLabelText(/folio:/i), {
-      target: { value: "111" },
+      target: { value: "1112" },
     });
 
     fireEvent.click(screen.getByText(/confirm/i));
