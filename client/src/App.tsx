@@ -10,7 +10,7 @@ function App() {
   useEffect(() => {
     async function fetchProperty() {
       const externalProperty = {
-        provider: "VIC-DDP",
+        provider: "VIC-DDPA",
         requestId: "REQ-12345",
         receivedAt: "2025-09-24T02:28:23.659Z",
         addressParts: {
