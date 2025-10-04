@@ -5998,19 +5998,19 @@
     ]
   },
   "packageFolders": {
-    "/Users/vincent/.nuget/packages/": {}
+    "/home/vincent/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/vincent/Downloads/infotrack-test/server.UnitTests/server.UnitTests.csproj",
+      "projectUniqueName": "/home/vincent/Downloads/infotrack-test/server.UnitTests/server.UnitTests.csproj",
       "projectName": "server.UnitTests",
-      "projectPath": "/Users/vincent/Downloads/infotrack-test/server.UnitTests/server.UnitTests.csproj",
-      "packagesPath": "/Users/vincent/.nuget/packages/",
-      "outputPath": "/Users/vincent/Downloads/infotrack-test/server.UnitTests/obj/",
+      "projectPath": "/home/vincent/Downloads/infotrack-test/server.UnitTests/server.UnitTests.csproj",
+      "packagesPath": "/home/vincent/.nuget/packages/",
+      "outputPath": "/home/vincent/Downloads/infotrack-test/server.UnitTests/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "/Users/vincent/.nuget/NuGet/NuGet.Config"
+        "/home/vincent/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net8.0"
@@ -6022,8 +6022,8 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "/Users/vincent/Downloads/infotrack-test/server/server.csproj": {
-              "projectPath": "/Users/vincent/Downloads/infotrack-test/server/server.csproj"
+            "/home/vincent/Downloads/infotrack-test/server/server.csproj": {
+              "projectPath": "/home/vincent/Downloads/infotrack-test/server/server.csproj"
             }
           }
         }
@@ -6032,11 +6032,6 @@
         "warnAsError": [
           "NU1605"
         ]
-      },
-      "restoreAuditProperties": {
-        "enableAudit": "true",
-        "auditLevel": "low",
-        "auditMode": "direct"
       }
     },
     "frameworks": {
@@ -6076,7 +6071,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.414/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/8.0.120/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

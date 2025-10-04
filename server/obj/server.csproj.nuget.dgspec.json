@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "/Users/vincent/Downloads/infotrack-test/server/server.csproj": {}
+    "/home/vincent/Downloads/infotrack-test/server/server.csproj": {}
   },
   "projects": {
-    "/Users/vincent/Downloads/infotrack-test/server/server.csproj": {
+    "/home/vincent/Downloads/infotrack-test/server/server.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/vincent/Downloads/infotrack-test/server/server.csproj",
+        "projectUniqueName": "/home/vincent/Downloads/infotrack-test/server/server.csproj",
         "projectName": "server",
-        "projectPath": "/Users/vincent/Downloads/infotrack-test/server/server.csproj",
-        "packagesPath": "/Users/vincent/.nuget/packages/",
-        "outputPath": "/Users/vincent/Downloads/infotrack-test/server/obj/",
+        "projectPath": "/home/vincent/Downloads/infotrack-test/server/server.csproj",
+        "packagesPath": "/home/vincent/.nuget/packages/",
+        "outputPath": "/home/vincent/Downloads/infotrack-test/server/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/Users/vincent/.nuget/NuGet/NuGet.Config"
+          "/home/vincent/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
@@ -32,11 +32,6 @@
           "warnAsError": [
             "NU1605"
           ]
-        },
-        "restoreAuditProperties": {
-          "enableAudit": "true",
-          "auditLevel": "low",
-          "auditMode": "direct"
         }
       },
       "frameworks": {
@@ -71,7 +66,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.414/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/8.0.120/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
